@@ -1,0 +1,116 @@
+@import "../components/Layout/Stairs/styles.scss";
+@import "../components/Layout/Inner/style.scss";
+@import "../components/Layout/Curve/style.scss";
+html {
+    scroll-behavior: smooth;
+}
+html.lenis,
+html.lenis body {
+    height: auto;
+}
+
+.lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+    overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+    pointer-events: none;
+}
+
+body {
+    @apply bg-[#ecebe7];
+}
+.main {
+    .page {
+        min-height: calc(100vh - 80px);
+
+        .drop-down-text {
+            @apply font-sans text-3xl uppercase tracking-tighter;
+        }
+    }
+
+    .body {
+        @apply relative;
+
+        gap: 40px;
+
+        .mouse-over {
+            @apply absolute inset-0 w-full h-full;
+
+            img {
+                @apply w-[200px] absolute hidden translate-x-[-50%] translate-y-[-50%];
+            }
+        }
+
+        .button {
+            @apply text-black font-sans text-lg relative;
+            &::after {
+                @apply absolute left-0 bottom-[1px] w-full h-1 bg-red z-10 transition-all duration-500;
+                content: "";
+            }
+
+            span {
+                @apply relative z-20;
+            }
+
+            &:hover {
+                &::after {
+                    @apply h-[22px];
+                }
+                span {
+                    @apply scale-95;
+                }
+            }
+        }
+
+        &.intro {
+            .h1 {
+                @apply text-black font-serif;
+                font-size: clamp(2.75rem, 2.67vw + 1rem, 4.125rem);
+                line-height: 1.1;
+            }
+            .h2 {
+                @apply text-black font-sans tracking-tight;
+                font-size: clamp(
+                    18px,
+                    calc(20px + (36 - 20) * (100vw - 768px) / (1920 - 768)),
+                    24px
+                );
+                line-height: 1.4;
+            }
+            p {
+                @apply text-black font-serif relative z-20;
+                font-size: clamp(
+                    18px,
+                    calc(20px + (36 - 20) * (100vw - 768px) / (1920 - 768)),
+                    24px
+                );
+                line-height: 1.4;
+            }
+        }
+    }
+
+    .item {
+        &.video {
+            cursor: url(/images/play.svg), auto;
+        }
+
+        &.image {
+            cursor: url(/images/file-image-sharp-solid.svg), auto;
+        }
+    }
+
+    .product {
+        p {
+            @apply text-black font-serif text-lg;
+        }
+    }
+}
