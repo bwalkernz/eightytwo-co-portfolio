@@ -182,33 +182,37 @@ export default function Home() {
         </AnimatePresence>
 
         <motion.div {...anim(pageAnimation)} className="origin-top">
-          <div className="body intro h-dvh px-4 py-16 flex items-center w-full">
+          <div className="body intro h-dvh px-4 xl:px-8 py-16 flex items-center w-full">
             <div className="w-full">
               <h1 className="max-w-[1200px] h1 mb-6 relative z-20 lg:mb-16">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Praesent imperdiet nibh sit amet velit dignissim, non tempus
-                nisl pellentesque.
+                Ben is a highly skilled Senior Front-End Developer with a
+                diverse professional background spanning contract, freelance,
+                and permanent roles.
               </h1>
               <div className="w-2/3 mx-auto flex flex-wrap">
                 <div className="w-full mb-6">
-                  <p className="relative z-20 max-w-[1200px]">
-                    Praesent sagittis magna sit amet ex blandit, id pharetra
-                    lectus feugiat. Praesent sit amet congue ipsum, in ultrices
-                    neque. In dapibus in purus vitae dignissim. Quisque molestie
-                    ullamcorper elementum.
+                  <p className="relative z-20 max-w-[1180px]">
+                    Well-versed in delivering innovative solutions for clients
+                    in diverse industries such as retail, telecommunications,
+                    music, tech, and advertising. Ben is experienced in both
+                    client and agency environments, with a global perspective
+                    gained from international projects such as work for{" "}
+                    <strong>NBC Universal</strong>, <strong>Nike</strong>,
+                    <strong> Seequent</strong> and <strong>Ragged Edge</strong>.
                   </p>
                 </div>
                 <div className="w-1/4">
-                  <h2 className="h2 relative z-20">Contact</h2>
-                  <p>Praesent sagittis</p>
-                  <p>Praesent sagittis</p>
-                  <p>Praesent sagittis</p>
-                </div>
-                <div className="w-1/4">
-                  <h2 className="h2 relative z-20">Contact</h2>
-                  <p>Praesent sagittis</p>
-                  <p>Praesent sagittis</p>
-                  <p>Praesent sagittis</p>
+                  <h2 className="h2 relative z-20">Contact:</h2>
+                  <p>
+                    e.{" "}
+                    <a href="mailto:bwalkernz@gmail.com">bwalkernz@gmail.com</a>
+                  </p>
+                  <p>
+                    p. <a href="tel:0064273016610">+64 27 301 6610</a>
+                  </p>
+                  <p>
+                    <a href="tel:0064273016610">download my CV here</a>
+                  </p>
                 </div>
               </div>
             </div>
@@ -225,7 +229,7 @@ export default function Home() {
               });
 
               if (!ready) {
-                return <div>Loading video...</div>;
+                return <div key={index}>Loading video...</div>;
               }
 
               return (
@@ -233,47 +237,48 @@ export default function Home() {
                   className={`item w-1/3 relative border-r border-b border-solid border-white p-4 group${
                     product.isVideo ? " video" : " image"
                   }`}
-                  key={index}
+                  key={product.name}
                   href={product.name}
                   scroll={false}
                   onMouseEnter={() => setHoveredProduct(product.title)}
                   onMouseLeave={() => setHoveredProduct(null)}
                 >
                   <motion.div
-                    className="relative z-20"
                     ref={ref}
                     initial={{ opacity: 0 }}
                     animate={inView ? { opacity: 1 } : { opacity: 0 }}
-                    transition={{ duration: 0.5, delay: index * 0.3 }} // Stagger delay
+                    transition={{ duration: 0.4, delay: index * 0.2 }} // Stagger delay
                   >
-                    {isVideo ? (
-                      <Suspense fallback={<div>Loading video...</div>}>
-                        <Video
-                          autoPlay={true}
-                          muted={true}
-                          loop={true}
-                          controls={false}
-                          src={product.videoPath}
-                          className="opacity-0 !aspect-[642/380] w-full object-cover transition-opacity duration-500 group-hover:opacity-100"
+                    <div className="relative z-20">
+                      {isVideo ? (
+                        <Suspense fallback={<div>Loading video...</div>}>
+                          <Video
+                            autoPlay={true}
+                            muted={true}
+                            loop={true}
+                            controls={false}
+                            src={product.videoPath}
+                            className="opacity-0 !aspect-[642/380] w-full object-cover transition-opacity duration-500 group-hover:opacity-100"
+                          />
+                        </Suspense>
+                      ) : (
+                        <motion.img
+                          className="opacity-0 aspect-[642/380] w-full object-cover transition-opacity duration-500 group-hover:opacity-100"
+                          src={`/images/${product.name}.jpg`}
+                          animate={{ scale: 1 }}
+                          whileHover={{ scale: 1 }}
                         />
-                      </Suspense>
-                    ) : (
-                      <motion.img
-                        className="opacity-0 aspect-[642/380] w-full object-cover transition-opacity duration-500 group-hover:opacity-100"
-                        src={`/images/${product.name}.jpg`}
-                        animate={{ scale: 1 }}
-                        whileHover={{ scale: 1 }}
+                      )}
+                    </div>
+                    <span className="opacity-100 z-10 flex items-center justify-center bg-[#ecebe7] absolute inset-0 transition-opacity duration-500 group-hover:opacity-0">
+                      <Image
+                        width={360}
+                        height={200}
+                        src={product.logo}
+                        alt={product.title}
                       />
-                    )}
+                    </span>
                   </motion.div>
-                  <span className="opacity-100 z-10 flex items-center justify-center bg-[#ecebe7] absolute inset-0 transition-opacity duration-500 group-hover:opacity-0">
-                    <Image
-                      width={360}
-                      height={200}
-                      src={product.logo}
-                      alt={product.title}
-                    />
-                  </span>
                 </Link>
               );
             })}

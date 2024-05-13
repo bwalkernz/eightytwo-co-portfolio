@@ -71,6 +71,16 @@ body {
             }
         }
 
+        .tech-list {
+            @apply text-black font-serif relative z-20;
+            font-size: clamp(
+                18px,
+                calc(20px + (36 - 20) * (100vw - 768px) / (1920 - 768)),
+                24px
+            );
+            line-height: 1.4;
+        }
+
         &.intro {
             .h1 {
                 @apply text-black font-serif;
@@ -87,7 +97,7 @@ body {
                 line-height: 1.4;
             }
             p {
-                @apply text-black font-serif relative z-20;
+                @apply text-black font-serif relative z-20 tracking-[0.3px];
                 font-size: clamp(
                     18px,
                     calc(20px + (36 - 20) * (100vw - 768px) / (1920 - 768)),
@@ -110,7 +120,13 @@ body {
 
     .product {
         p {
-            @apply text-black font-serif text-lg;
+            @apply text-black font-serif;
+            font-size: clamp(
+                18px,
+                calc(20px + (36 - 20) * (100vw - 768px) / (1920 - 768)),
+                24px
+            );
+            line-height: 1.4;
         }
     }
 }

@@ -78,6 +78,7 @@ export default function MouseOver() {
               console.log(refs);
             }}
             ref={ref}
+            key={index}
             src={`/images/mouse-images/${index}.jpg`}
           ></img>
         );

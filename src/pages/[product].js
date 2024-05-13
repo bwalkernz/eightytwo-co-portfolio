@@ -63,23 +63,89 @@ export default function Product() {
 
   const productDescriptions = {
     canterburymuseum:
-      "<p>CM A comfortable and stylish shoe for everyday wear.</p>",
+      "<p>Canterbury Museum is one of the largest in New Zealand, this project was a complete re-design and build of their website, It showcases exhibits, events and collections and brings forward Canterbury Museum as a world-leading research institute. It can can receive online donations. Built at Plato; I was the lead front end developer, creating and coding the front end experience.</p>",
     timberunlimited:
-      "<p>CM A comfortable and stylish shoe for everyday wear.</p>",
-    tekaha: "<p>CM A comfortable and stylish shoe for everyday wear.</p>",
+      "<p>I led the front-end development for this website at Plato. Timber Unlimited is dedicated to promoting timber to create a better future for New Zealand. Our solution not only met their requirements but also showcased rich images and a refined design language.</p>",
+    tekaha:
+      "<p>Still in construction, the Te Kaha stadium project is one of the largest currently underway in NewZealand. The initial website requirement was to introduce the brand and tell the story behind the meaning of the Maori name Te Kaha. A rich animation was developed to show how the stadium will have an impact on the city of Christchurch from day to night.</p>",
     platocreative:
-      "<p>CM A comfortable and stylish shoe for everyday wear.</p>",
+      "<p>I was part of the redesign and rebuild project of Plato's 2020 website. Built during the pandemic to life Plato Creative’s new brand, the site was built using Next JS and features a variety of animation and page transitions. </p>",
     christscollege:
-      "<p>CM A comfortable and stylish shoe for everyday wear.</p>",
-    turitv: "<p>CM A comfortable and stylish shoe for everyday wear.</p>",
-    tetahiyouth: "A comfortable and stylish shoe for everyday wear.",
-    nike: "A comfortable and stylish shoe for everyday wear.",
-    queenstownparkhotel: "A comfortable and stylish shoe for everyday wear.",
-    russellscurtains: "A comfortable and stylish shoe for everyday wear.",
-    traillite: "A comfortable and stylish shoe for everyday wear.",
-    tribe: "A comfortable and stylish shoe for everyday wear.",
-    wearebar: "A comfortable and stylish shoe for everyday wear.",
-    weareglobal: "A comfortable and stylish shoe for everyday wear.",
+      "<p>Christs College is one of New Zealand's most prestigious private schools, they wanted a website that would reflect this. We used slow fades, video,  rich imagery and an easy to follow information architecture to showcase all the facilities offered by the school.</p>",
+    turitv:
+      "<p>This site is a Netflix type website built for the deaf community as an education resource for children, viewers can select and watch their favorite videos using this tool. </p>",
+    tetahiyouth:
+      "<p>The design of this site lent itself so well to digital, a very fun site developed as a resource for troubled youth. Rich and engaging we wanted to talk to youth at their level not down to them.</p>",
+    nike: "<p>Contracted as a Front End Developer for OMM to help build and develop animation for a microsite and touch screens for the Nike release of the Pegasus Turbo shoe. The microsite sits inside the Runners Point e-commerce site. The touch screens were located in Nike Towns Europe wide. I worked with one other developer who took care of the JS logic, while I built the HTML frame-work, markup, and styling as well as the animations in Greensock JS.</p>",
+    queenstownparkhotel:
+      "<p>A site built to showcase the hotels offerings, rich imagery, polite animations and a luxurious feel was used to portray the hotels high end stature. </p>",
+    russellscurtains:
+      "<p>As one the largest suppliers of curtains and blinds in New Zealand, the website for Russells was developed in 2021. I worked on the initial development and have been involved ever since as the site has been constantly refined as more UX work is incorporated into the project.</p>",
+    traillite:
+      "<p>Traillite is one of the largest suppliers and manufacturers of motorhomes and caravans in New Zealand. We built a comprehensive website that allows you to view all their products, floor plans and specs for every product they offer.</p>",
+    tribe: "<p>Tribe is an IT firm based in New Zealand.</p>",
+    wearebar:
+      "<p>Contracted on a project basis by Ragged Edge to deliver a three stage digital roll out for the recently rebranded We Are Bar from the well known Jamie’s Wine Bar. The project involved an initial holding site counting down the opening while encouraging users to sign up to a mailing list. This was then replaced with an interim launch site with more information on the openings, moving on the launch of the full WordPress updatable site with supporting campaign monitor mail outs.</p>",
+    weareglobal:
+      "<p>Global is a software company based in Christchurch, the website was built based on an obvious grid system, scattered with animations that bring the site to life and add some depth.</p>",
+  };
+
+  const techList = {
+    canterburymuseum: {
+      techlist: ["Next JS", "React", "Tailwind CSS", "Lottie JS", "Craft CMS"],
+    },
+    timberunlimited: {
+      techlist: ["Next JS", "React", "Tailwind CSS", "Lottie JS", "Craft CMS"],
+    },
+    tekaha: {
+      techlist: ["Next JS", "React", "Tailwind CSS", "GSAP", "Craft CMS"],
+    },
+    platocreative: {
+      techlist: ["Next JS", "React", "Tailwind CSS", "Lottie JS", "Craft CMS"],
+    },
+    christscollege: {
+      techlist: ["Twig", "Tailwind CSS", "Vanilla", "Craft CMS"],
+    },
+    turitv: {
+      techlist: ["Next JS", "React", "Tailwind CSS", "Craft CMS"],
+    },
+    tetahiyouth: {
+      techlist: ["Next JS", "React", "Tailwind CSS", "Lottie JS", "Craft CMS"],
+    },
+    nike: {
+      techlist: ["Jade", "CSS", "GSAP", "Vanilla JS"],
+    },
+
+    queenstownparkhotel: {
+      techlist: ["Twig", "Vanilla JS", "Tailwind CSS", "Craft CMS"],
+    },
+    russellscurtains: {
+      techlist: ["Next JS", "React", "Tailwind CSS", "GSAP", "Craft CMS"],
+    },
+    traillite: {
+      techlist: ["Twig", "Tailwind CSS", "Vanilla JS", "Craft CMS"],
+    },
+    tribe: {
+      techlist: [
+        "Twig",
+        "Vanilla JS",
+        "Tailwind CSS",
+        "Lottie JS",
+        "Craft CMS",
+      ],
+    },
+    wearebar: {
+      techlist: ["Wordpress", "CSS", "jQuery"],
+    },
+    weareglobal: {
+      techlist: [
+        "Twig",
+        "Vanilla JS",
+        "Tailwind CSS",
+        "Lottie JS",
+        "Craft CMS",
+      ],
+    },
   };
 
   const productVideos = {
@@ -101,7 +167,7 @@ export default function Product() {
 
   const productLinks = {
     canterburymuseum: "https://www.canterburymuseum.com/",
-    timberunlimted: "https://www.timberunlimited.co.nz/",
+    timberunlimited: "https://www.timberunlimited.co.nz/",
     tekaha: "https://www.tekaha.co.nz/",
     christscollege: "https://christscollege.com/",
     turitv: "https://www.turitv.co.nz/",
@@ -116,6 +182,7 @@ export default function Product() {
   const description = productDescriptions[product];
   const video = productVideos[product];
   const links = productLinks[product];
+  const tech = techList[product];
 
   const reversed = product === "watch" ? true : false;
 
@@ -190,8 +257,24 @@ export default function Product() {
               />
             </div>
             <div ref={secondImage} className="flex relative w-1/2">
-              <div className="w-1/2">
-                <div className="pb-6">{parse(description)}</div>
+              <div className={video ? "w-1/2" : "w-fill"}>
+                <div className="pb-6 pr-6">
+                  {parse(description)}
+                  <div className="pt-6">
+                    <h3 className="text-black font-sans text-lg mb-2">
+                      Tech used:
+                    </h3>
+
+                    <ul className="tech-list flex flex-wrap">
+                      {tech &&
+                        tech.techlist.map((item, index) => (
+                          <li className="mr-2" key={index}>
+                            {item},
+                          </li>
+                        ))}
+                    </ul>
+                  </div>
+                </div>
                 {links && (
                   <a className="button" target="_blank" href={links}>
                     <span>View project</span>
@@ -199,9 +282,9 @@ export default function Product() {
                 )}
               </div>
 
-              <div className="relative w-1/2">
-                <div className="sticky top-[112px] p-2 bg-white">
-                  {video && (
+              {video && (
+                <div className="relative w-1/2">
+                  <div className="sticky top-[112px] p-2 bg-white">
                     <Suspense fallback={<div>Loading video...</div>}>
                       <Video
                         autoPlay={true}
@@ -212,18 +295,9 @@ export default function Product() {
                         className="!aspect-[640/378] w-full object-cover"
                       />
                     </Suspense>
-
-                    // <video
-                    //   className="aspect-[640/370] w-full object-cover"
-                    //   autoPlay
-                    //   loop
-                    // >
-                    //   <source src={video} type="video/mp4" />
-                    //   Your browser does not support the video tag.
-                    // </video>
-                  )}
+                  </div>
                 </div>
-              </div>
+              )}
             </div>
           </div>
         </motion.div>
