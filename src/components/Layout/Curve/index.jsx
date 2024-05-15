@@ -37,7 +37,7 @@ const pathImages = {
   "/russellscurtains": "/images/logo-russells.svg",
   "/traillite": "/images/logo-traillite.svg",
   "/tribe": "/images/logo-tribe.svg",
-  "/wearebar": "/images/logo-wearebar.svg",
+  "/wearebar": "/images/we-are-bar.png",
   "/weareglobal": "/images/logo-weareglobal.svg",
 };
 

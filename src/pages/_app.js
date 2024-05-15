@@ -46,8 +46,6 @@ export default function App({ Component, pageProps, router }) {
             alt="logo"
           />
         </Link>
-
-        {/* <Link href="/contact">Contact</Link> */}
       </div>
       <AnimatePresence mode="wait">
         <Component key={router.route} {...pageProps} />

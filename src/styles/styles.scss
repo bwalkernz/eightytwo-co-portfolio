@@ -33,13 +33,12 @@ body {
         min-height: calc(100vh - 80px);
 
         .drop-down-text {
-            @apply font-sans text-3xl uppercase tracking-tighter;
+            @apply font-sans text-base lg:text-3xl uppercase tracking-tighter;
         }
     }
 
     .body {
         @apply relative;
-
         gap: 40px;
 
         .mouse-over {
@@ -67,6 +66,26 @@ body {
                 }
                 span {
                     @apply scale-95;
+                }
+            }
+        }
+
+        .button_a {
+            @apply text-black font-serif relative;
+            &::after {
+                @apply absolute left-0 top-2/4 w-0 h-px bg-red z-10 transition-all duration-500;
+                content: "";
+            }
+
+            span {
+                @apply relative z-20;
+            }
+
+            &:hover {
+                &::after {
+                    @apply w-full;
+                }
+                span {
                 }
             }
         }
@@ -116,6 +135,12 @@ body {
         &.image {
             cursor: url(/images/file-image-sharp-solid.svg), auto;
         }
+
+        .logo-container {
+            .wearebar {
+                @apply w-[100px];
+            }
+        }
     }
 
     .product {
@@ -127,6 +152,57 @@ body {
                 24px
             );
             line-height: 1.4;
+        }
+
+        .first-image {
+            @apply relative;
+            .image-container {
+                &:after {
+                    @apply absolute inset-0 z-10 bg-white/10 backdrop-blur-sm transition-opacity duration-500;
+                    content: "";
+                }
+            }
+
+            .mouse-hand {
+                @apply transition-opacity duration-500;
+            }
+
+            &:hover {
+                .image-container {
+                    &:after {
+                        @apply opacity-0;
+                    }
+                }
+
+                .mouse-hand {
+                    @apply opacity-0;
+                }
+            }
+        }
+
+        .second-image {
+            @apply relative;
+            .video-container {
+                &:after {
+                    @apply absolute inset-0 z-10 bg-white/10 backdrop-blur-sm transition-opacity duration-500;
+                    content: "";
+                }
+            }
+
+            .mouse-hand {
+                @apply transition-opacity duration-500;
+            }
+
+            &:hover {
+                .video-container {
+                    &:after {
+                        @apply opacity-0;
+                    }
+                }
+                .mouse-hand {
+                    @apply opacity-0;
+                }
+            }
         }
     }
 }
