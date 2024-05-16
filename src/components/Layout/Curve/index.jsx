@@ -32,12 +32,12 @@ const pathImages = {
   "/christscollege": "/images/logo-christscollege.svg",
   "/turitv": "/images/logo-turitv.svg",
   "/tetahiyouth": "/images/logo-tetahiyouth.svg",
-  "/nike": "/images/logo-nike.svg",
+  "/nike": "/images/logo-nike-a.svg",
   "/queenstownparkhotel": "/images/logo-queenstownparkhotel.svg",
-  "/russellscurtains": "/images/logo-russellscurtains.svg",
+  "/russellscurtains": "/images/logo-russells.svg",
   "/traillite": "/images/logo-traillite.svg",
   "/tribe": "/images/logo-tribe.svg",
-  "/wearebar": "/images/logo-wearebar.svg",
+  "/wearebar": "/images/we-are-bar.png",
   "/weareglobal": "/images/logo-weareglobal.svg",
 };
 

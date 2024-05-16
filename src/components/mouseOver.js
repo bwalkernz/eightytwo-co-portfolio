@@ -1,13 +1,11 @@
-"use client";
-//import styles from './page.module.css'
-import { useRef } from "react";
+import React, { useState, useRef } from "react";
 
 export default function MouseOver() {
+  const [refs, setRefs] = useState([]);
   let steps = 0;
   let currentIndex = 0;
   let nbOfImages = 0;
   let maxNumberOfImages = 8;
-  let refs = [];
 
   const manageMouseMove = (e) => {
     const { clientX, clientY, movementX, movementY } = e;
@@ -30,12 +28,16 @@ export default function MouseOver() {
 
   const moveImage = (x, y) => {
     const currentImage = refs[currentIndex].current;
-    currentImage.style.left = x + "px";
-    currentImage.style.top = y + "px";
-    currentImage.style.display = "block";
-    currentIndex++;
-    nbOfImages++;
-    setZIndex();
+    if (window.innerWidth > 1024) {
+      if (currentImage) {
+        currentImage.style.left = x + "px";
+        currentImage.style.top = y + "px";
+        currentImage.style.display = "block";
+        currentIndex++;
+        nbOfImages++;
+        setZIndex();
+      }
+    }
   };
 
   const setZIndex = () => {
@@ -47,8 +49,10 @@ export default function MouseOver() {
 
   const removeImage = () => {
     const images = getCurrentImages();
-    images[0].style.display = "none";
-    nbOfImages--;
+    if (images[0]) {
+      images[0].style.display = "none";
+      nbOfImages--;
+    }
   };
 
   const getCurrentImages = () => {
@@ -69,19 +73,34 @@ export default function MouseOver() {
       }}
       className="mouse-over"
     >
-      {[...Array(19).keys()].map((_, index) => {
-        const ref = useRef(null);
-        refs.push(ref);
-        return (
-          <img
-            onClick={() => {
-              console.log(refs);
-            }}
-            ref={ref}
-            src={`/images/mouse-images/${index}.jpg`}
-          ></img>
-        );
-      })}
+      {[...Array(16).keys()].map((_, index) => (
+        <MouseItem setRefs={setRefs} refs={refs} index={index} key={index} />
+      ))}
     </div>
+  );
+}
+
+function MouseItem({ setRefs, refs, index }) {
+  const ref = useRef(null);
+
+  // Update the refs array in the parent component
+  // whenever a new ref is created in this component
+  useState(() => {
+    setRefs((prevRefs) => {
+      const newRefs = [...prevRefs];
+      newRefs[index] = ref;
+      return newRefs;
+    });
+  }, [ref]);
+
+  return (
+    <img
+      onClick={() => {
+        console.log(refs);
+      }}
+      ref={ref}
+      key={index}
+      src={`/images/mouse-images/${index}.png`}
+    />
   );
 }
