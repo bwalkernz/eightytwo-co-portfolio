@@ -202,7 +202,7 @@ export default function Home() {
                   </p>
                 </div>
                 <div className="w-full">
-                  <h2 className="h2 relative z-20">Contact:</h2>
+                  {/* <h2 className="h2 relative z-20">Contact:</h2> */}
                   <p>
                     e.{" "}
                     <a className="button_a" href="mailto:bwalkernz@gmail.com">
