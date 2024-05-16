@@ -33,7 +33,7 @@ body {
         min-height: calc(100vh - 80px);
 
         .drop-down-text {
-            @apply font-sans text-base lg:text-3xl uppercase tracking-tighter;
+            @apply font-sans text-base lg:text-3xl uppercase;
         }
     }
 
@@ -45,28 +45,23 @@ body {
             @apply absolute inset-0 w-full h-full;
 
             img {
-                @apply w-[200px] absolute hidden translate-x-[-50%] translate-y-[-50%];
+                @apply w-[200px] fixed hidden translate-x-[-50%] translate-y-[-50%];
             }
         }
 
         .button {
-            @apply text-black font-sans text-lg relative;
-            &::after {
+            @apply text-black py-4 px-10 inline-block relative z-50 font-sans text-base relative border border-solid border-black rounded-full transition-colors duration-500;
+            /* &::after {
                 @apply absolute left-0 bottom-[1px] w-full h-1 bg-red z-10 transition-all duration-500;
                 content: "";
-            }
+            } */
 
             span {
                 @apply relative z-20;
             }
 
             &:hover {
-                &::after {
-                    @apply h-[22px];
-                }
-                span {
-                    @apply scale-95;
-                }
+                @apply bg-red;
             }
         }
 
@@ -103,11 +98,11 @@ body {
         &.intro {
             .h1 {
                 @apply text-black font-serif;
-                font-size: clamp(2.75rem, 2.67vw + 1rem, 4.125rem);
+                font-size: clamp(2.25rem, 2.67vw + 1rem, 2.875rem);
                 line-height: 1.1;
             }
             .h2 {
-                @apply text-black font-sans tracking-tight;
+                @apply text-black font-sans;
                 font-size: clamp(
                     18px,
                     calc(20px + (36 - 20) * (100vw - 768px) / (1920 - 768)),
@@ -116,7 +111,7 @@ body {
                 line-height: 1.4;
             }
             p {
-                @apply text-black font-serif relative z-20 tracking-[0.3px];
+                @apply text-black font-serif relative z-20;
                 font-size: clamp(
                     18px,
                     calc(20px + (36 - 20) * (100vw - 768px) / (1920 - 768)),
@@ -158,7 +153,7 @@ body {
             @apply relative;
             .image-container {
                 &:after {
-                    @apply absolute inset-0 z-10 bg-white/10 backdrop-blur-sm transition-opacity duration-500;
+                    @apply hidden lg:block absolute inset-0 z-10 bg-white/10 backdrop-blur-sm transition-opacity duration-500;
                     content: "";
                 }
             }
@@ -184,7 +179,7 @@ body {
             @apply relative;
             .video-container {
                 &:after {
-                    @apply absolute inset-0 z-10 bg-white/10 backdrop-blur-sm transition-opacity duration-500;
+                    @apply hidden lg:block absolute inset-0 z-10 bg-white/10 backdrop-blur-sm transition-opacity duration-500;
                     content: "";
                 }
             }

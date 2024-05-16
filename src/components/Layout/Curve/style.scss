@@ -1,5 +1,6 @@
-.curve{
-    svg, .background{
+.curve {
+    svg,
+    .background {
         position: fixed;
         height: calc(100vh + 600px);
         width: 100vw;
@@ -10,8 +11,9 @@
     }
 
     svg path {
-        fill: white;}
-    .background{
+        fill: white;
+    }
+    .background {
         background-color: #ffffff;
         transition: opacity 0s linear 0.1s;
     }
@@ -21,17 +23,9 @@
         top: 40%;
         z-index: 4;
         transform: translateX(-50%);
-        @apply w-[360px];
-
+        @apply w-[280px] xl:w-[360px];
     }
-    .route{
-        position: absolute;
-        left: 50%;
-        top: 30%;
-        color: black;
-        font-size: 220px;
-        z-index: 3;
-        transform: translateX(-50%);
-        text-align: center;
+    .route {
+        @apply text-[100px] xl:text-[220px] absolute left-2/4 top-[30%] text-black translate-x-[-50%] font-serif text-center z-[3];
     }
 }

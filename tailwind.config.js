@@ -25,9 +25,9 @@ module.exports = {
     },
     fontFamily: {
       //sans: ["var(--font-wix_madefor_text)", ...fallbackFonts],
-      serif: ["var(--font-items_font)", ...fallbackFonts],
-      sans: ["var(--font-mont_font)", ...fallbackFonts],
-      sansReg: ["var(--font-mont_reg_font)", ...fallbackFonts],
+      serif: ["var(--font-burns_font)", ...fallbackFonts],
+      sans: ["var(--font-burns_font)", ...fallbackFonts],
+      sansReg: ["var(--font-burns_font)", ...fallbackFonts],
     },
   },
   plugins: [],

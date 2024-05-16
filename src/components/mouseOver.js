@@ -28,13 +28,15 @@ export default function MouseOver() {
 
   const moveImage = (x, y) => {
     const currentImage = refs[currentIndex].current;
-    if (currentImage) {
-      currentImage.style.left = x + "px";
-      currentImage.style.top = y + "px";
-      currentImage.style.display = "block";
-      currentIndex++;
-      nbOfImages++;
-      setZIndex();
+    if (window.innerWidth > 1024) {
+      if (currentImage) {
+        currentImage.style.left = x + "px";
+        currentImage.style.top = y + "px";
+        currentImage.style.display = "block";
+        currentIndex++;
+        nbOfImages++;
+        setZIndex();
+      }
     }
   };
 

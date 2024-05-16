@@ -161,7 +161,7 @@ export default function Home() {
         <AnimatePresence>
           {hoveredProduct && (
             <motion.p
-              className="drop-down-text pt-4 lg:pt-2.5 pr-4 fixed top-0 right-0 z-50"
+              className="drop-down-text pt-6 lg:pt-5 pr-4 xl:pr-8 fixed top-0 right-0 z-50"
               key={hoveredProduct}
               initial={{
                 opacity: 0,
@@ -189,7 +189,7 @@ export default function Home() {
                 professional background spanning contract, freelance, and
                 permanent roles.
               </h1>
-              <div className="w-full md:w-2/3 mx-auto flex flex-wrap">
+              <div className="w-full lg:w-2/3 lg:mx-auto flex flex-wrap">
                 <div className="w-full mb-6">
                   <p className="relative z-20 max-w-[1180px]">
                     Well-versed in delivering innovative solutions for clients
@@ -197,11 +197,11 @@ export default function Home() {
                     music, tech, and advertising. Ben is experienced in both
                     client and agency environments, with a global perspective
                     gained from international projects such as work for{" "}
-                    <strong>NBC Universal</strong>, <strong>Nike</strong>,
-                    <strong> Seequent</strong> and <strong>Ragged Edge</strong>.
+                    <s>NBC Universal</s>, <s>Nike</s>, <s>Seequent</s> and{" "}
+                    <s>Ragged Edge</s>.
                   </p>
                 </div>
-                <div className="w-full md:w-1/4">
+                <div className="w-full">
                   <h2 className="h2 relative z-20">Contact:</h2>
                   <p>
                     e.{" "}
@@ -215,9 +215,14 @@ export default function Home() {
                       <span>+64 27 301 6610</span>
                     </a>
                   </p>
-                  <p>
-                    <a className="button" href="tel:0064273016610">
-                      <span>Download my CV here</span>
+                  <p className="pt-10">
+                    <a
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      className="button"
+                      href="/ben-walker-cv.pdf"
+                    >
+                      <span>download my CV here</span>
                     </a>
                   </p>
                 </div>
@@ -226,7 +231,7 @@ export default function Home() {
 
             <MouseOver />
           </div>
-          <div className="relative flex flex-wrap border-t border-solid border-white">
+          <div className="relative flex flex-wrap border-t border-solid border-white mb-4">
             {products.map((product, index) => (
               <ProductItem
                 key={product.name}
