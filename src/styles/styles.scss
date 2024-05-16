@@ -99,7 +99,7 @@ body {
             .h1 {
                 @apply text-black font-serif;
                 font-size: clamp(2.25rem, 2.67vw + 1rem, 2.875rem);
-                line-height: 1.1;
+                line-height: 1.2;
             }
             .h2 {
                 @apply text-black font-sans;
@@ -108,7 +108,7 @@ body {
                     calc(20px + (36 - 20) * (100vw - 768px) / (1920 - 768)),
                     24px
                 );
-                line-height: 1.4;
+                line-height: 1.8;
             }
             p {
                 @apply text-black font-serif relative z-20;

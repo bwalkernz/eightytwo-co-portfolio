@@ -290,7 +290,7 @@ export default function Product() {
 
               {video && (
                 <div className="relative w-full sm:w-1/2">
-                  <div className="lg:sticky top-[112px] p-2 z-20 bg-white">
+                  <div className="lg:fixed top-[112px] p-2 z-20 bg-white">
                     <div className="video-container">
                       <Suspense fallback={<div>Loading video...</div>}>
                         <Video
