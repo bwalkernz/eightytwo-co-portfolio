@@ -80,6 +80,7 @@ export default function App({ Component, pageProps, router }) {
           </a>
         </p>
       </footer>
+      <Analytics />
     </div>
   );
 }
