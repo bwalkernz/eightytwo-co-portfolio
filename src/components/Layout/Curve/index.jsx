@@ -7,6 +7,7 @@ import { text, curve, translate } from "./anim";
 
 const pathNames = {
   "/": "Home.",
+  "/seequent": "",
   "/timberunlimited": "",
   "/canterburymuseum": "",
   "/tekaha": "",
@@ -25,6 +26,7 @@ const pathNames = {
 
 const pathImages = {
   "/": "",
+  "/seequent": "/images/logo-seequent.svg",
   "/timberunlimited": "/images/logo-timberunlimited.svg",
   "/canterburymuseum": "/images/logo-canterburymuseum.svg",
   "/tekaha": "/images/logo-tekaha.svg",
