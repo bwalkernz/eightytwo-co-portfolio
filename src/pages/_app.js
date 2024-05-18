@@ -6,6 +6,7 @@ import Image from "next/image";
 import { useEffect } from "react";
 import localFont from "next/font/local";
 import { Manrope } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
 
 const manrope = Manrope({
   subsets: ["latin"],

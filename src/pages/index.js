@@ -8,8 +8,9 @@ import React, { useState, useEffect, Suspense } from "react";
 import Lenis from "@studio-freight/lenis";
 import { useInView } from "react-intersection-observer";
 import Video from "next-video";
-import MouseOver from "@/components/mouseOver.js";
+//import MouseOver from "@/components/mouseOver.js";
 
+import seequentVideo from "../../videos/seequent.mp4";
 import canterburymuseumVideo from "../../videos/canterburymuseum.mp4";
 import timberunlimitedVideo from "../../videos/timberunlimited.mp4";
 import tekahaVideo from "../../videos/tekaha.mp4";
@@ -52,6 +53,13 @@ export default function Home() {
   }, []);
 
   const products = [
+    {
+      name: "seequent",
+      isVideo: true,
+      title: "Seequent",
+      logo: "/images/logo-seequent.svg",
+      videoPath: seequentVideo,
+    },
     {
       name: "canterburymuseum",
       isVideo: true,
@@ -197,8 +205,10 @@ export default function Home() {
                     music, tech, and advertising. Ben is experienced in both
                     client and agency environments, with a global perspective
                     gained from international projects such as work for{" "}
-                    <s>NBC Universal</s>, <s>Nike</s>, <s>Seequent</s> and{" "}
-                    <s>Ragged Edge</s>.
+                    <span className="text-red">NBC Universal</span>,
+                    <span className="text-red"> Nike</span>,
+                    <span className="text-red"> Seequent</span> and{" "}
+                    <span className="text-red">Ragged Edge</span>.
                   </p>
                 </div>
                 <div className="w-full">
@@ -229,7 +239,7 @@ export default function Home() {
               </div>
             </div>
 
-            <MouseOver />
+            {/* <MouseOver /> */}
           </div>
           <div className="relative flex flex-wrap border-t border-solid border-white mb-4">
             {products.map((product, index) => (

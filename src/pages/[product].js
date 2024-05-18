@@ -9,6 +9,7 @@ import parse from "html-react-parser";
 import Video from "next-video";
 import Image from "next/image";
 
+import seequentVideo from "../../videos/seequent.mp4";
 import canterburymuseumVideo from "../../videos/canterburymuseum.mp4";
 import timberunlimitedVideo from "../../videos/timberunlimited.mp4";
 import tekahaVideo from "../../videos/tekaha.mp4";
@@ -23,6 +24,7 @@ import weareglobalVideo from "../../videos/weareglobal.mp4";
 
 const pathNamesA = {
   "/": "",
+  "/seequent": "",
   "/timberunlimited": "",
   "/canterburymuseum": "",
   "/tekaha": "",
@@ -63,6 +65,8 @@ export default function Product() {
   } = useRouter();
 
   const productDescriptions = {
+    seequent:
+      "<p>Seequent is a world leading earth-modelling, analysis, data management and collaboration software company. We were tasked with developing a new all products filtering page and creating reusable content blocks to make up other product pages. This was a challenging job working with a fragile code base on a site with high traffic and constant content updates, we added a new dynamic content system to make content entry a lot more efficient for the business. Not to mention bringing to life an elegant design system, which was designed in house at Seequent.</p>",
     canterburymuseum:
       "<p>Canterbury Museum is one of the largest in New Zealand, this project was a complete re-design and build of their website, It showcases exhibits, events and collections and brings forward Canterbury Museum as a world-leading research institute. It can can receive online donations. Built at Plato; I was the lead front end developer, creating and coding the front end experience.</p>",
     timberunlimited:
@@ -92,6 +96,9 @@ export default function Product() {
   };
 
   const techList = {
+    seequent: {
+      techlist: ["PHP", "Vanilla JS", "Tailwind CSS", "WordPress"],
+    },
     canterburymuseum: {
       techlist: ["Next JS", "React", "Tailwind CSS", "Lottie JS", "Craft CMS"],
     },
@@ -105,7 +112,7 @@ export default function Product() {
       techlist: ["Next JS", "React", "Tailwind CSS", "Lottie JS", "Craft CMS"],
     },
     christscollege: {
-      techlist: ["Twig", "Tailwind CSS", "Vanilla", "Craft CMS"],
+      techlist: ["Twig", "Tailwind CSS", "Vanilla JS", "Craft CMS"],
     },
     turitv: {
       techlist: ["Next JS", "React", "Tailwind CSS", "Craft CMS"],
@@ -150,6 +157,7 @@ export default function Product() {
   };
 
   const productVideos = {
+    seequent: seequentVideo,
     canterburymuseum: canterburymuseumVideo,
     timberunlimited: timberunlimitedVideo,
     tekaha: tekahaVideo,
@@ -167,6 +175,7 @@ export default function Product() {
   };
 
   const productLinks = {
+    seequent: "https://www.seequent.com/products-solutions/geostudio-2d/",
     canterburymuseum: "https://www.canterburymuseum.com/",
     timberunlimited: "https://www.timberunlimited.co.nz/",
     tekaha: "https://www.tekaha.co.nz/",
