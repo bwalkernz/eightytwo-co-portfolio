@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 import { text, curve, translate } from "./anim";
 
 const pathNames = {
-  "/": "Home.",
+  "/": "",
   "/seequent": "",
   "/timberunlimited": "",
   "/canterburymuseum": "",
@@ -25,7 +25,7 @@ const pathNames = {
 };
 
 const pathImages = {
-  "/": "",
+  "/": "/images/logo-eightytwoco.svg",
   "/seequent": "/images/logo-seequent.svg",
   "/timberunlimited": "/images/logo-timberunlimited.svg",
   "/canterburymuseum": "/images/logo-canterburymuseum.svg",

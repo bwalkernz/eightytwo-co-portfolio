@@ -58,7 +58,7 @@ export default function App({ Component, pageProps, router }) {
             className="w-[110px]"
             width="580"
             height="148"
-            src="/images/logo-retina.png"
+            src="/images/logo-eightytwoco.png"
             alt="logo"
           />
         </Link>
