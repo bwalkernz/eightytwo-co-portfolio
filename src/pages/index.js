@@ -232,7 +232,7 @@ export default function Home() {
                       className="button"
                       href="/ben-walker-cv.pdf"
                     >
-                      <span>download my CV here</span>
+                      download my CV here
                     </a>
                   </p>
                 </div>
