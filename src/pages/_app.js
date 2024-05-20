@@ -55,10 +55,10 @@ export default function App({ Component, pageProps, router }) {
       <header className="header pl-4 xl:pl-8 overflow-hidden bg-white w-full py-4 fixed z-50 flex justify-between border-b border-solid border-[#ecebe7]">
         <Link href="/">
           <Image
-            className="w-[110px]"
+            className="w-[80px]"
             width="580"
             height="148"
-            src="/images/logo-eightytwoco.svg"
+            src="/images/logo-bw.svg"
             alt="logo"
           />
         </Link>
@@ -67,7 +67,7 @@ export default function App({ Component, pageProps, router }) {
         <Component key={router.route} {...pageProps} />
       </AnimatePresence>
       <footer className="px-4 flex justify-between xl:px-8 pt-4 pb-8">
-        <p className="font-sans">&copy; 82-CO. {currentYear}</p>
+        <p className="font-sans">&copy; BW. {currentYear}</p>
 
         <p className="font-sans">
           <a

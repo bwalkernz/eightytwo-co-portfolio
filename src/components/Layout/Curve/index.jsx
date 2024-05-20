@@ -25,7 +25,7 @@ const pathNames = {
 };
 
 const pathImages = {
-  "/": "/images/logo-eightytwoco.svg",
+  "/": "/images/logo-bw.svg",
   "/seequent": "/images/logo-seequent.svg",
   "/timberunlimited": "/images/logo-timberunlimited.svg",
   "/canterburymuseum": "/images/logo-canterburymuseum.svg",
