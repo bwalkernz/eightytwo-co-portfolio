@@ -205,10 +205,18 @@ export default function Home() {
                     music, tech, and advertising. Ben is experienced in both
                     client and agency environments, with a global perspective
                     gained from international projects such as work for{" "}
-                    <span className="text-red">NBC Universal</span>,
-                    <span className="text-red"> Nike</span>,
-                    <span className="text-red"> Seequent</span> and{" "}
-                    <span className="text-red">Ragged Edge</span>.
+                    <span className="bg-white inline-block px-1">
+                      NBC Universal,
+                    </span>
+                    <span className="bg-white inline-block px-1">Nike,</span>
+                    <span className="bg-white inline-block px-1">
+                      {" "}
+                      Seequent
+                    </span>{" "}
+                    and{" "}
+                    <span className="bg-white inline-block px-1">
+                      Ragged Edge.
+                    </span>
                   </p>
                 </div>
                 <div className="w-full">
@@ -232,7 +240,7 @@ export default function Home() {
                       className="button"
                       href="/ben-walker-cv.pdf"
                     >
-                      download my CV here
+                      Download my CV here
                     </a>
                   </p>
                 </div>

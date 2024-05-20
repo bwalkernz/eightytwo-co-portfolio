@@ -58,7 +58,7 @@ export default function App({ Component, pageProps, router }) {
             className="w-[110px]"
             width="580"
             height="148"
-            src="/images/logo-eightytwoco.png"
+            src="/images/logo-eightytwoco.svg"
             alt="logo"
           />
         </Link>
@@ -67,7 +67,7 @@ export default function App({ Component, pageProps, router }) {
         <Component key={router.route} {...pageProps} />
       </AnimatePresence>
       <footer className="px-4 flex justify-between xl:px-8 pt-4 pb-8">
-        <p className="font-sans">&copy; BW82 {currentYear}</p>
+        <p className="font-sans">&copy; 82-CO. {currentYear}</p>
 
         <p className="font-sans">
           <a
@@ -76,7 +76,7 @@ export default function App({ Component, pageProps, router }) {
             target="_blank"
             href="https://www.linkedin.com/in/benwalkereightytwo/"
           >
-            linkedin
+            Linkedin
           </a>
         </p>
       </footer>
