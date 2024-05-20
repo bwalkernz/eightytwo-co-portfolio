@@ -68,7 +68,7 @@ export default function Product() {
     seequent:
       "<p>Seequent is a world leading earth-modelling, analysis, data management and collaboration software company. <br /> <br />We were tasked with developing a new all products filtering page and creating reusable content blocks to make up other product pages. This was a challenging job working with a fragile code base on a site with high traffic and constant content updates, we added a new dynamic content system to make content entry a lot more efficient for the business. Not to mention bringing to life an elegant design system, which was designed in house at Seequent.</p>",
     canterburymuseum:
-      "<p>Canterbury Museum is one of the largest in New Zealand, this project was a complete re-design and build of their website, It showcases exhibits, events and collections and brings forward Canterbury Museum as a world-leading research institute. It can can receive online donations. Built at Plato; I was the lead front end developer, creating and coding the front end experience.</p>",
+      "<p>Canterbury Museum is one of the largest in New Zealand, this project was a complete re-design and build of their website. It showcases exhibits, events and collections and brings forward Canterbury Museum as a world-leading research institute. It can can receive online donations. Built at Plato; I was the lead front end developer, creating and coding the front end experience.</p>",
     timberunlimited:
       "<p>Timber Unlimited is dedicated to promoting timber to create a better future for New Zealand. I led the front-end development for this website at Plato. Our solution not only met their requirements but also showcased rich images and a refined design language.</p>",
     tekaha:
