@@ -169,7 +169,7 @@ export default function Home() {
         <AnimatePresence>
           {hoveredProduct && (
             <motion.p
-              className="drop-down-text pt-6 lg:pt-5 pr-4 xl:pr-8 fixed top-0 right-0 z-50"
+              className="drop-down-text pt-5 lg:pt-3.5 pr-4 xl:pr-8 fixed top-0 right-0 z-50"
               key={hoveredProduct}
               initial={{
                 opacity: 0,
@@ -193,18 +193,17 @@ export default function Home() {
           <div className="body intro md:h-dvh px-4 xl:px-8 pt-32 pb-16 flex items-center w-full">
             <div className="w-full">
               <h1 className="max-w-[1200px] h1 mb-6 relative z-20 lg:mb-16">
-                Ben is a highly skilled Web Developer with a diverse
-                professional background spanning contract, freelance, and
-                permanent roles.
+                EightyTwo Co. is Web Developement contractor based in
+                Christchurch, New Zealand.
               </h1>
               <div className="w-full lg:w-2/3 lg:mx-auto flex flex-wrap">
                 <div className="w-full mb-6">
                   <p className="relative z-20 max-w-[1180px]">
                     Well-versed in delivering innovative solutions for clients
                     in diverse industries such as retail, telecommunications,
-                    music, tech, and advertising. Ben is experienced in both
-                    client and agency environments, with a global perspective
-                    gained from international projects such as work for{" "}
+                    music, tech, and advertising. EightyTwo Co. has a global
+                    perspective gained from international projects such as work
+                    for{" "}
                     <span className="bg-white inline-block px-1">
                       NBC Universal,
                     </span>
@@ -223,8 +222,11 @@ export default function Home() {
                   {/* <h2 className="h2 relative z-20">Contact:</h2> */}
                   <p>
                     e.{" "}
-                    <a className="button_a" href="mailto:bwalkernz@gmail.com">
-                      <span>bwalkernz@gmail.com</span>
+                    <a
+                      className="button_a"
+                      href="mailto:eightytwoconz@gmail.com"
+                    >
+                      <span>eightytwoconz@gmail.com</span>
                     </a>
                   </p>
                   <p>
@@ -233,7 +235,7 @@ export default function Home() {
                       <span>+64 27 301 6610</span>
                     </a>
                   </p>
-                  <p className="pt-10">
+                  {/* <p className="pt-10">
                     <a
                       rel="noopener noreferrer"
                       target="_blank"
@@ -242,7 +244,7 @@ export default function Home() {
                     >
                       Download my CV here
                     </a>
-                  </p>
+                  </p> */}
                 </div>
               </div>
             </div>
