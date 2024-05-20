@@ -193,7 +193,7 @@ export default function Home() {
           <div className="body intro md:h-dvh px-4 xl:px-8 pt-32 pb-16 flex items-center w-full">
             <div className="w-full">
               <h1 className="max-w-[1200px] h1 mb-6 relative z-20 lg:mb-16">
-                EightyTwo Co. is Web Developement contractor based in
+                EightyTwo Co. is Web Development contractor based in
                 Christchurch, New Zealand.
               </h1>
               <div className="w-full lg:w-2/3 lg:mx-auto flex flex-wrap">
