@@ -6,3 +6,13 @@ body {
     margin: 0px;
     /* background-color: black; */
 }
+
+form {
+    .form-input,
+    .form-textarea {
+        &:focus,
+        &:focus-visible {
+            @apply border-[#50C878] border shadow-none outline-none ring-0 ring-offset-0;
+        }
+    }
+}
