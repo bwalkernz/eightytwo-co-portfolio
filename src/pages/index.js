@@ -62,7 +62,7 @@ export default function Home() {
 
                 {errors.email && (
                   <span className="font-sans text-xs font-bold text-red">
-                    Enter a valid email address
+                    Please enter a valid email address
                   </span>
                 )}
               </label>
@@ -94,7 +94,7 @@ export default function Home() {
 
                 {errors.password && (
                   <span className="font-sans text-xs font-bold text-red">
-                    Enter a valid password, must be longer than 8 characters
+                    Password must be longer than 8 characters
                   </span>
                 )}
               </label>
@@ -191,7 +191,6 @@ export default function Home() {
                     name="animal"
                     value="bear"
                     {...register("animal", { required: "Animal is required" })}
-                    onChange={handleAnimalChange}
                   />
                   <span className="font-sans text-md ml-2">Bear</span>
                 </label>
@@ -219,7 +218,6 @@ export default function Home() {
                     name="animal"
                     value="snake"
                     {...register("animal", { required: "Animal is required" })}
-                    onChange={handleAnimalChange}
                   />
                   <span className="font-sans text-md ml-2">Snake</span>
                 </label>
@@ -233,7 +231,6 @@ export default function Home() {
                     name="animal"
                     value="donkey"
                     {...register("colour", { required: "Animal is required" })}
-                    onChange={handleAnimalChange}
                   />
                   <span className="font-sans text-md ml-2">Donkey</span>
                 </label>
@@ -265,7 +262,7 @@ export default function Home() {
 
                   {errors.text && (
                     <span className="font-sans text-xs font-bold text-red">
-                      Please enter your type of tiger
+                      Please enter the type of tiger
                     </span>
                   )}
                 </label>
