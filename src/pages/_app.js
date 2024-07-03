@@ -59,7 +59,7 @@ export default function App({ Component, pageProps, router }) {
             width="580"
             height="148"
             src="/images/logo-bw.svg"
-            alt="logo"
+            alt="ben walker"
           />
         </Link>
       </header>

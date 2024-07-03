@@ -313,6 +313,7 @@ function ProductItem({ product, index, ready, setHoveredProduct }) {
               src={`/images/${product.name}.jpg`}
               animate={{ scale: 1 }}
               whileHover={{ scale: 1 }}
+              alt={product.name}
             />
           )}
         </div>
