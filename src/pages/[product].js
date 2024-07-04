@@ -198,7 +198,7 @@ export default function Product() {
     timberunlimited: "https://www.timberunlimited.co.nz/",
     platocreative:
       "https://web.archive.org/web/20230305140732/https://platocreative.co.nz/",
-    tekaha: "https://www.tekaha.co.nz/",
+    tekaha: "https://www.onenewzealandstadium.co.nz/",
     christscollege: "https://christscollege.com/",
     turitv: "https://www.turitv.co.nz/",
     tetahiyouth: "https://www.tetahiyouth.co.nz/",
